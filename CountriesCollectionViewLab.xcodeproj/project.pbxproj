@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3E40B69123D00F1500007AFF /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E40B69023D00F1500007AFF /* DetailViewController.swift */; };
 		3EE67FE023CF703C006A9363 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EE67FDF23CF703C006A9363 /* AppDelegate.swift */; };
 		3EE67FE223CF703C006A9363 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EE67FE123CF703C006A9363 /* SceneDelegate.swift */; };
 		3EE67FE423CF703C006A9363 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EE67FE323CF703C006A9363 /* ViewController.swift */; };
@@ -31,6 +32,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3E40B69023D00F1500007AFF /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		3EE67FDC23CF703C006A9363 /* CountriesCollectionViewLab.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CountriesCollectionViewLab.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3EE67FDF23CF703C006A9363 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3EE67FE123CF703C006A9363 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -92,6 +94,7 @@
 				3EE67FE123CF703C006A9363 /* SceneDelegate.swift */,
 				3EE67FE323CF703C006A9363 /* ViewController.swift */,
 				3EE67FE523CF703C006A9363 /* Main.storyboard */,
+				3E40B69023D00F1500007AFF /* DetailViewController.swift */,
 				3EE67FE823CF7047006A9363 /* Assets.xcassets */,
 				3EE67FEA23CF7047006A9363 /* LaunchScreen.storyboard */,
 				3EE67FED23CF7047006A9363 /* Info.plist */,
@@ -231,6 +234,7 @@
 				3EE6800823CF89AC006A9363 /* CountryStruct.swift in Sources */,
 				3EE67FE023CF703C006A9363 /* AppDelegate.swift in Sources */,
 				3EE67FE223CF703C006A9363 /* SceneDelegate.swift in Sources */,
+				3E40B69123D00F1500007AFF /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

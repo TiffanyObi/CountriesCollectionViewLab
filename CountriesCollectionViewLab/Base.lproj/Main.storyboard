@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="vb4-JQ-39Z">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
@@ -17,53 +17,53 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="vdj-do-jOT">
-                                <rect key="frame" x="0.0" y="44" width="414" height="56"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="56"/>
                                 <textInputTraits key="textInputTraits"/>
                             </searchBar>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="cU3-DI-DTE">
-                                <rect key="frame" x="0.0" y="100" width="414" height="796"/>
+                                <rect key="frame" x="0.0" y="144" width="414" height="752"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="ZQp-IZ-3GM">
-                                    <size key="itemSize" width="414" height="324"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="ZQp-IZ-3GM">
+                                    <size key="itemSize" width="323" height="284"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="countryCell" id="bRg-b2-gjc" customClass="CountryCell" customModule="CountriesCollectionViewLab" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="324"/>
+                                        <rect key="frame" x="45.5" y="0.0" width="323" height="284"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="KB1-OZ-Pku">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="324"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="323" height="284"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="vlT-Sq-BLn">
-                                                    <rect key="frame" x="0.0" y="0.0" width="250" height="200"/>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pencil.circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="vlT-Sq-BLn">
+                                                    <rect key="frame" x="0.0" y="0.5" width="250" height="199"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="250" id="MQp-bc-gC3"/>
                                                         <constraint firstAttribute="height" constant="200" id="u34-Xa-PGS"/>
                                                     </constraints>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Country Name" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DSC-Ex-pUU">
-                                                    <rect key="frame" x="258" y="20" width="148" height="20.5"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Country Name" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DSC-Ex-pUU">
+                                                    <rect key="frame" x="258" y="20" width="57" height="61"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Country Capital" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rYD-15-aFf">
-                                                    <rect key="frame" x="258" y="90.5" width="148" height="20.5"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Country Capital" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rYD-15-aFf">
+                                                    <rect key="frame" x="258" y="131" width="57" height="61"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Country Population" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ThG-bm-xS6">
-                                                    <rect key="frame" x="258" y="161" width="148" height="20.5"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Country Population" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ThG-bm-xS6">
+                                                    <rect key="frame" x="258" y="242" width="57" height="81.5"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Click Here To Learn More About This Country" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nX2-ZF-Qzk">
-                                                    <rect key="frame" x="34.5" y="263.5" width="345.5" height="20.5"/>
+                                                    <rect key="frame" x="-11.5" y="223.5" width="346" height="20.5"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" red="0.60630375146865845" green="0.42187774181365967" blue="0.089522413909435272" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
@@ -85,12 +85,13 @@
                                                 <constraint firstItem="ThG-bm-xS6" firstAttribute="top" secondItem="rYD-15-aFf" secondAttribute="bottom" constant="50" id="o8u-yZ-btx"/>
                                             </constraints>
                                         </collectionViewCellContentView>
-                                        <size key="customSize" width="414" height="324"/>
+                                        <size key="customSize" width="323" height="284"/>
                                         <connections>
                                             <outlet property="countryCapitalLabel" destination="rYD-15-aFf" id="BnX-gy-Uqv"/>
                                             <outlet property="countryNameLabel" destination="DSC-Ex-pUU" id="GhV-W3-XfI"/>
                                             <outlet property="countryPopulationLabel" destination="ThG-bm-xS6" id="Vve-2i-cfE"/>
                                             <outlet property="flagImageView" destination="vlT-Sq-BLn" id="W4q-s0-Zeb"/>
+                                            <segue destination="S9u-sW-p3p" kind="show" id="pWo-P5-jkY"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
@@ -108,10 +109,96 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" id="Irm-00-ZPS"/>
+                    <connections>
+                        <outlet property="collectionView" destination="cU3-DI-DTE" id="dKF-Kv-5hA"/>
+                        <outlet property="searchBar" destination="vdj-do-jOT" id="0KJ-YT-BxV"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1047.8260869565217" y="105.80357142857143"/>
+        </scene>
+        <!--Detail View Controller-->
+        <scene sceneID="bfc-fm-kg6">
+            <objects>
+                <viewController id="S9u-sW-p3p" customClass="DetailViewController" customModule="CountriesCollectionViewLab" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="FiY-Wp-QWA">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="oRI-3N-mQX">
+                                <rect key="frame" x="0.0" y="88" width="414" height="356"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b5p-Fk-6wn">
+                                <rect key="frame" x="8" y="484" width="398" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Capital Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gfY-LM-e2f">
+                                <rect key="frame" x="100" y="558" width="214" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Populuation Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gsq-Nt-eWz">
+                                <rect key="frame" x="129.5" y="632" width="155.5" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.60451191663742065" green="0.0" blue="0.99928683042526245" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="oRI-3N-mQX" firstAttribute="top" secondItem="I6r-GD-UEx" secondAttribute="top" id="3q9-TM-ouV"/>
+                            <constraint firstItem="I6r-GD-UEx" firstAttribute="trailing" secondItem="b5p-Fk-6wn" secondAttribute="trailing" constant="8" id="6ie-fS-ICd"/>
+                            <constraint firstItem="Gsq-Nt-eWz" firstAttribute="top" secondItem="gfY-LM-e2f" secondAttribute="bottom" constant="50" id="8bY-Ho-bbF"/>
+                            <constraint firstItem="gfY-LM-e2f" firstAttribute="leading" secondItem="I6r-GD-UEx" secondAttribute="leading" constant="100" id="KiG-nY-4Ew"/>
+                            <constraint firstItem="gfY-LM-e2f" firstAttribute="centerX" secondItem="FiY-Wp-QWA" secondAttribute="centerX" id="S9F-2R-VqH"/>
+                            <constraint firstItem="oRI-3N-mQX" firstAttribute="height" secondItem="FiY-Wp-QWA" secondAttribute="height" multiplier="0.397321" id="bzK-Cv-ISn"/>
+                            <constraint firstItem="b5p-Fk-6wn" firstAttribute="leading" secondItem="I6r-GD-UEx" secondAttribute="leading" constant="8" id="jgL-rR-nmV"/>
+                            <constraint firstItem="Gsq-Nt-eWz" firstAttribute="centerX" secondItem="FiY-Wp-QWA" secondAttribute="centerX" id="kkG-cD-Jze"/>
+                            <constraint firstItem="gfY-LM-e2f" firstAttribute="top" secondItem="b5p-Fk-6wn" secondAttribute="bottom" constant="50" id="kzW-Gg-Fl5"/>
+                            <constraint firstItem="oRI-3N-mQX" firstAttribute="leading" secondItem="I6r-GD-UEx" secondAttribute="leading" id="nRD-IA-tpw"/>
+                            <constraint firstItem="oRI-3N-mQX" firstAttribute="trailing" secondItem="I6r-GD-UEx" secondAttribute="trailing" id="oHi-hb-ZgV"/>
+                            <constraint firstItem="I6r-GD-UEx" firstAttribute="trailing" secondItem="gfY-LM-e2f" secondAttribute="trailing" constant="100" id="uHw-18-wy6"/>
+                            <constraint firstItem="b5p-Fk-6wn" firstAttribute="top" secondItem="oRI-3N-mQX" secondAttribute="bottom" constant="40" id="xTi-2K-vg7"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="I6r-GD-UEx"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="DbH-Hl-vKL"/>
+                    <connections>
+                        <outlet property="capitalNameLabel" destination="gfY-LM-e2f" id="eLN-7F-6Rj"/>
+                        <outlet property="countryNameLabel" destination="b5p-Fk-6wn" id="lzW-5V-P8K"/>
+                        <outlet property="flagImageView" destination="oRI-3N-mQX" id="blf-sC-HyE"/>
+                        <outlet property="populationLabel" destination="Gsq-Nt-eWz" id="ABm-RK-Lyj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FwT-hR-1ic" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1957.9710144927537" y="105.80357142857143"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="7Da-9R-VdX">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="vb4-JQ-39Z" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="afn-ED-pAS">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="dkR-XO-eA5"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9Em-2v-Vde" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="137.68115942028987" y="105.80357142857143"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="pencil.circle.fill" catalog="system" width="64" height="60"/>
+    </resources>
 </document>

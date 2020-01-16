@@ -11,5 +11,6 @@ import Foundation
 struct Country: Codable {
     let name: String
     let capital: String
-    let population: String
+    let population: Double
+    let alpha2Code: String
 }
