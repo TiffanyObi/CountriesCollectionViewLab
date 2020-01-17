@@ -26,7 +26,8 @@ class ViewController: UIViewController {
         didSet {
             DispatchQueue.main.async {
               
-                self.collectionView.reloadData()
+            
+                
         }
     }
 }
@@ -118,16 +119,16 @@ extension ViewController:UISearchBarDelegate {
         }
     
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
-        //dismiss the keyboard,
         
         
-        guard !searchText.isEmpty else {
-            //searchBar is empty hereb so we have to get back all lof the of the original.
+        guard searchBar.text != nil else {
+            //searchBar is empty here so we have to get back all lof the of the original.
             //usuing our loadData method.
            getCountries()
             return
         }
 
+       searchQuery = searchText
         
         
     }
